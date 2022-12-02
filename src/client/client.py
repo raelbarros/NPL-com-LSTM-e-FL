@@ -26,7 +26,7 @@ class Client(fl.client.NumPyClient):
             epochs=epochs,
             validation_split=0.2
         )
-
+        
         results = {
             "loss": history.history["loss"][0],
             "accuracy": history.history["accuracy"][0],

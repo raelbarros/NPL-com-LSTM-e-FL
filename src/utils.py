@@ -4,7 +4,7 @@ import pandas as pd
 # Faz a leitura do Dataset original e divide em tres datasets diferentes (um para o server e um para cada client)
 def fileTransform():
     columns = ["sentiment", "id", "date", "query", "user_id", "text"]
-    df_original = pd.read_csv('./dataset_original/original.csv', encoding='latin', names=columns)
+    df_original = pd.read_csv('./dataset/original/original.csv', encoding='latin', names=columns)
 
     df_original.drop(['id', 'date', 'query', 'user_id'], axis=1, inplace=True)
 
@@ -20,13 +20,13 @@ def fileTransform():
     # Pega os ultimos 5k de dados para o server
     df_server = df_original[-10000:]
 
-    # Pega os ultimos 200k de dados para os client
+    # Pega os ultimos 10k de dados para os client
     df_client1 = df_original[0:50000]
     df_client2 = df_original[100000:150000]
 
-    df_server.to_csv('./input/server.csv', encoding='latin', index=False)
-    df_client1.to_csv('./input/client1.csv', encoding='latin', index=False)
-    df_client2.to_csv('./input/client2.csv', encoding='latin', index=False)
+    df_server.to_csv('./dataset/custom/server.csv', encoding='latin', index=False)
+    df_client1.to_csv('./dataset/custom/client1.csv', encoding='latin', index=False)
+    df_client2.to_csv('./dataset/custom/client2.csv', encoding='latin', index=False)
 
     print(f"Server shape: {df_server.shape}")
     print(f"Client1 shape: {df_client1.shape}")

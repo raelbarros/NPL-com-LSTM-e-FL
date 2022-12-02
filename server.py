@@ -6,6 +6,11 @@ from sklearn.preprocessing import LabelEncoder
 from src.server.server import Server
 from src.model.model import Model
 
+import matplotlib.pyplot as plt
+from datetime import datetime
+import pandas as pd
+
+
 def main():
     # Carrega modelo
     model = Model().create_model()
@@ -22,7 +27,7 @@ def main():
     )
 
     # Inicia Flower Server com 4 rounds
-    fl.server.start_server(
+    history = fl.server.start_server(
         server_address="0.0.0.0:8080",
         config=fl.server.ServerConfig(num_rounds=4),
         strategy=strategy
@@ -63,7 +68,7 @@ def get_evaluate_fn(model):
 
 def fit_config(server_round):
     # Retorna configuracao de treino para os client
-    return {"local_epochs": 2}
+    return {"local_epochs": 1}
 
 
 def evaluate_config(server_round):
