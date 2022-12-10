@@ -14,7 +14,7 @@ O projeto tem como objetivo a sumulação de um ambiente de aprendizado federado
 * python > 3.6
 
 
-### Installing
+### Instalação
 
 * Instalação das dependencias
 * Descompactação do dataset
@@ -23,7 +23,7 @@ pip install -r requirements.txt
 unzip -o src/dataset.zip
 ```
 
-### Executing program
+### Execução
 
 * Re-execução do dataset (opcional)
 ```
@@ -43,3 +43,7 @@ python3 client1.py
 ```
 python3 client1.py
 ```
+
+
+### Dataset Utilizado
+https://www.kaggle.com/datasets/kazanova/sentiment140
