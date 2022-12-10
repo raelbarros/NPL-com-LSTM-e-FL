@@ -4,8 +4,8 @@ Projeto de final da materia de INF317E - Tópicos em Inteligência Artificial: A
 
 ## Descrição
 
-Inicio dos estudos na area de Federated Leraning.
-O projeto tem como objetivo a sumulação de um ambiente de aprendizado federado com dados de tweets, o ambiente é divido em 3 agentes (1 servidor e 2 clientes) com dados distintos em cada um deles.
+Inicio dos estudos na área de Federated Leraning.
+O projeto visa a simulação de um ambiente de aprendizado federado com dados de tweets, o ambiente é divido em 3 agentes (1 servidor e 2 clientes) com dados distintos em cada um deles.
 
 ## Getting Started
 
