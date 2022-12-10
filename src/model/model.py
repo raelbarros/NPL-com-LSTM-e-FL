@@ -9,7 +9,7 @@ class Model():
             keras.layers.LSTM(64),
             keras.layers.Dense(128, activation='relu'),
             keras.layers.Dropout(0.5),
-            keras.layers.Dense(3, activation='softmax')
+            keras.layers.Dense(2, activation='softmax')
         ])
         
         model.compile(

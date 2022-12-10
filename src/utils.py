@@ -18,7 +18,7 @@ def fileTransform():
     df_original = df_original.sample(frac=1).reset_index(drop=True)
 
     # Pega os ultimos 5k de dados para o server
-    df_server = df_original[-10000:]
+    df_server = df_original[-5000:]
 
     # Pega os ultimos 10k de dados para os client
     df_client1 = df_original[0:50000]
