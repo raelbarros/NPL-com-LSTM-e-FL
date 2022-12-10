@@ -1,6 +1,6 @@
 # NPL-com-LSTM-e-FL
 
-Projeto de final da materia de INF317E - Tópicos em Inteligência Artificial: Aprendizagem Profunda 2022.3 - UFABC
+Projeto final da materia de INF317E - Tópicos em Inteligência Artificial: Aprendizagem Profunda 2022.3 - UFABC
 
 ## Descrição
 
