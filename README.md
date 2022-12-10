@@ -11,7 +11,7 @@ O projeto tem como objetivo a sumulação de um ambiente de aprendizado federado
 
 ### Dependencias
 
-* python > 3.0
+* python > 3.6
 
 
 ### Installing
